@@ -4,8 +4,7 @@
 
 int def_p = 0;
 int pos = 5;
-void setup()
-{
+void setup() {
 	pinMode(PWM_PIN, OUTPUT);
 	Serial.begin(9600);
 	Serial.println("rootming");
@@ -15,8 +14,7 @@ void setup()
 	delay(100);
 }
 
-void loop()
-{
+void loop() {
 	analogWrite(PWM_PIN, def_p);
 	def_p += pos;
 	if(def_p == 255)
