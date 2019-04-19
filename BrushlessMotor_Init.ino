@@ -5,13 +5,13 @@
 int def_p = 0;
 int pos = 5;
 void setup() {
-	pinMode(PWM_PIN, OUTPUT);
-	Serial.begin(9600);
-	Serial.println("rootming");
-	delay(100);
-	analogWrite(PWM_PIN, 0);
-	// set p to 0
-	delay(100);
+    pinMode(PWM_PIN, OUTPUT);
+    Serial.begin(9600);
+    Serial.println("rootming");
+    delay(100);
+    analogWrite(PWM_PIN, 0);
+    // set p to 0
+    delay(100);
 }
 
 void loop() {
